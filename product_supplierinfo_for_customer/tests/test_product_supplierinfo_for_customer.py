@@ -5,11 +5,14 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 from odoo.tests.common import TransactionCase
 
+from odoo.addons.base.tests.common import DISABLED_MAIL_CONTEXT
+
 
 class TestProductSupplierinfoForCustomer(TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
+        cls.env = cls.env(context=dict(cls.env.context, **DISABLED_MAIL_CONTEXT))
         cls.supplierinfo_model = cls.env["product.supplierinfo"]
         cls.customerinfo_model = cls.env["product.customerinfo"]
         cls.pricelist_item_model = cls.env["product.pricelist.item"]
@@ -51,6 +54,7 @@ class TestProductSupplierinfoForCustomer(TransactionCase):
                 "product_id": product.id,
                 "product_code": "00001",
                 "price": 100.0,
+                "sequence": 10,
             }
         )
 
@@ -163,6 +167,7 @@ class TestProductSupplierinfoForCustomer(TransactionCase):
                 "partner_id": self.customer.id,
                 "product_tmpl_id": template.id,
                 "price": 30.0,
+                "sequence": 20,
             }
         )
         res = product.with_context(partner_id=self.customer.id).price_compute(

@@ -24,6 +24,21 @@ msgstr "Actif"
 
 #. module: product_set
 #: model_terms:ir.ui.view,arch_db:product_set.view_product_set_form
+msgid "Add a line"
+msgstr ""
+
+#. module: product_set
+#: model_terms:ir.ui.view,arch_db:product_set.view_product_set_form
+msgid "Add a note"
+msgstr ""
+
+#. module: product_set
+#: model_terms:ir.ui.view,arch_db:product_set.view_product_set_form
+msgid "Add a section"
+msgstr ""
+
+#. module: product_set
+#: model_terms:ir.ui.view,arch_db:product_set.view_product_set_form
 #: model_terms:ir.ui.view,arch_db:product_set.view_product_set_search
 msgid "Archived"
 msgstr ""
@@ -51,6 +66,11 @@ msgstr "Créé le"
 #: model:ir.model.fields,field_description:product_set.field_product_set_line__display_name
 msgid "Display Name"
 msgstr "Nom affiché"
+
+#. module: product_set
+#: model:ir.model.fields,field_description:product_set.field_product_set_line__display_type
+msgid "Display Type"
+msgstr ""
 
 #. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set__id
@@ -83,11 +103,18 @@ msgstr "Modifié le"
 
 #. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set__name
+#: model:ir.model.fields,field_description:product_set.field_product_set_line__name
 msgid "Name"
 msgstr "Nom"
 
 #. module: product_set
+#: model:ir.model.fields.selection,name:product_set.selection__product_set_line__display_type__line_note
+msgid "Note"
+msgstr ""
+
+#. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set__partner_id
+#: model:ir.model.fields,field_description:product_set.field_product_set_wizard__partner_id
 #: model_terms:ir.ui.view,arch_db:product_set.view_product_set_search
 msgid "Partner"
 msgstr "Partenaire"
@@ -101,6 +128,7 @@ msgstr "Article"
 #. module: product_set
 #: model:ir.actions.act_window,name:product_set.act_open_product_set_view
 #: model:ir.model,name:product_set.model_product_set
+#: model:ir.model.fields,field_description:product_set.field_product_set_wizard__product_set_id
 #: model_terms:ir.ui.view,arch_db:product_set.view_product_set_form
 #: model_terms:ir.ui.view,arch_db:product_set.view_product_set_line_search
 #: model_terms:ir.ui.view,arch_db:product_set.view_product_set_search
@@ -120,6 +148,11 @@ msgid "Product set line"
 msgstr "Ligne du Set"
 
 #. module: product_set
+#: model:ir.model.fields,field_description:product_set.field_product_set_wizard__product_set_line_ids
+msgid "Product set lines"
+msgstr "Lignes du Set"
+
+#. module: product_set
 #: model:ir.model.fields,help:product_set.field_product_set__name
 msgid "Product set name"
 msgstr "Nom du Set"
@@ -131,8 +164,14 @@ msgstr "Produits"
 
 #. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set_line__quantity
+#: model:ir.model.fields,field_description:product_set.field_product_set_wizard__quantity
 msgid "Quantity"
 msgstr "Quantité"
+
+#. module: product_set
+#: model:ir.model.fields.selection,name:product_set.selection__product_set_line__display_type__line_section
+msgid "Section"
+msgstr ""
 
 #. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set_line__sequence
@@ -143,6 +182,18 @@ msgstr "Séquence"
 #: model:ir.model.fields,field_description:product_set.field_product_set_line__product_set_id
 msgid "Set"
 msgstr "Set"
+
+#. module: product_set
+#. odoo-python
+#: code:addons/product_set/tests/models.py:0
+#, python-format
+msgid "This set of products is restricted for this user."
+msgstr ""
+
+#. module: product_set
+#: model:ir.model,name:product_set.model_product_set_wizard
+msgid "Transient base model to define custom wizards"
+msgstr ""
 
 #. module: product_set
 #: model:ir.model.fields,help:product_set.field_product_set__partner_id
@@ -177,9 +228,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Activez cette option pour ne pas ajouter de nouvelles lignes pour les "
 #~ "produits déjà inclus dans des lignes de commandes."
-
-#~ msgid "Product set lines"
-#~ msgstr "Lignes du Set"
 
 #~ msgid "Sale Order"
 #~ msgstr "Commande"

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-23 01:51+0000\n"
-"PO-Revision-Date: 2023-03-23 13:23+0000\n"
+"PO-Revision-Date: 2024-03-18 09:33+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -17,19 +17,34 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set__active
 #: model:ir.model.fields,field_description:product_set.field_product_set_line__active
 msgid "Active"
-msgstr ""
+msgstr "Attivo"
+
+#. module: product_set
+#: model_terms:ir.ui.view,arch_db:product_set.view_product_set_form
+msgid "Add a line"
+msgstr "Aggiungi una riga"
+
+#. module: product_set
+#: model_terms:ir.ui.view,arch_db:product_set.view_product_set_form
+msgid "Add a note"
+msgstr "Aggiungi nota"
+
+#. module: product_set
+#: model_terms:ir.ui.view,arch_db:product_set.view_product_set_form
+msgid "Add a section"
+msgstr "Aggiungi una sezione"
 
 #. module: product_set
 #: model_terms:ir.ui.view,arch_db:product_set.view_product_set_form
 #: model_terms:ir.ui.view,arch_db:product_set.view_product_set_search
 msgid "Archived"
-msgstr ""
+msgstr "In archivio"
 
 #. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set__company_id
@@ -56,6 +71,11 @@ msgid "Display Name"
 msgstr "Nome visualizzato"
 
 #. module: product_set
+#: model:ir.model.fields,field_description:product_set.field_product_set_line__display_type
+msgid "Display Type"
+msgstr "Tipo visualizzazione"
+
+#. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set__id
 #: model:ir.model.fields,field_description:product_set.field_product_set_line__id
 msgid "ID"
@@ -64,7 +84,7 @@ msgstr "ID"
 #. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set__ref
 msgid "Internal Reference"
-msgstr ""
+msgstr "Riferimento interno"
 
 #. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set____last_update
@@ -86,14 +106,21 @@ msgstr "Ultimo aggiornamento il"
 
 #. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set__name
+#: model:ir.model.fields,field_description:product_set.field_product_set_line__name
 msgid "Name"
 msgstr "Nome"
 
 #. module: product_set
+#: model:ir.model.fields.selection,name:product_set.selection__product_set_line__display_type__line_note
+msgid "Note"
+msgstr "Nota"
+
+#. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set__partner_id
+#: model:ir.model.fields,field_description:product_set.field_product_set_wizard__partner_id
 #: model_terms:ir.ui.view,arch_db:product_set.view_product_set_search
 msgid "Partner"
-msgstr ""
+msgstr "Partner"
 
 #. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set_line__product_id
@@ -104,38 +131,50 @@ msgstr "Prodotto"
 #. module: product_set
 #: model:ir.actions.act_window,name:product_set.act_open_product_set_view
 #: model:ir.model,name:product_set.model_product_set
+#: model:ir.model.fields,field_description:product_set.field_product_set_wizard__product_set_id
 #: model_terms:ir.ui.view,arch_db:product_set.view_product_set_form
 #: model_terms:ir.ui.view,arch_db:product_set.view_product_set_line_search
 #: model_terms:ir.ui.view,arch_db:product_set.view_product_set_search
 msgid "Product set"
-msgstr ""
+msgstr "Set prodotto"
 
 #. module: product_set
 #: model:ir.model.fields,help:product_set.field_product_set__ref
 msgid "Product set internal reference"
-msgstr ""
+msgstr "Riferimento interno set prodotto"
 
 #. module: product_set
 #: model:ir.actions.act_window,name:product_set.act_open_product_set_line_view
 #: model:ir.model,name:product_set.model_product_set_line
 #: model_terms:ir.ui.view,arch_db:product_set.view_product_set_line_search
 msgid "Product set line"
-msgstr ""
+msgstr "Riga set prodotto"
+
+#. module: product_set
+#: model:ir.model.fields,field_description:product_set.field_product_set_wizard__product_set_line_ids
+msgid "Product set lines"
+msgstr "Righe set prodotto"
 
 #. module: product_set
 #: model:ir.model.fields,help:product_set.field_product_set__name
 msgid "Product set name"
-msgstr ""
+msgstr "Nome riga set prodotto"
 
 #. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set__set_line_ids
 msgid "Products"
-msgstr ""
+msgstr "Prodotti"
 
 #. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set_line__quantity
+#: model:ir.model.fields,field_description:product_set.field_product_set_wizard__quantity
 msgid "Quantity"
-msgstr ""
+msgstr "Quantità"
+
+#. module: product_set
+#: model:ir.model.fields.selection,name:product_set.selection__product_set_line__display_type__line_section
+msgid "Section"
+msgstr "Sezione"
 
 #. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set_line__sequence
@@ -145,7 +184,19 @@ msgstr "Sequenza"
 #. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set_line__product_set_id
 msgid "Set"
-msgstr ""
+msgstr "Set"
+
+#. module: product_set
+#. odoo-python
+#: code:addons/product_set/tests/models.py:0
+#, python-format
+msgid "This set of products is restricted for this user."
+msgstr "Questo set di prodotti è limitato per questo utente."
+
+#. module: product_set
+#: model:ir.model,name:product_set.model_product_set_wizard
+msgid "Transient base model to define custom wizards"
+msgstr "Modello transient base per definire procedure guidate personalizzate"
 
 #. module: product_set
 #: model:ir.model.fields,help:product_set.field_product_set__partner_id
@@ -153,6 +204,8 @@ msgid ""
 "You can attache the set to a specific partner or no one. If you don't "
 "specify one, it's going to be available for all of them."
 msgstr ""
+"Si può collegare un det ad un partner specifico o a nessuno. Ne non viene "
+"specificato, sarà disponibile per tutti."
 
 #~ msgid "Cancel"
 #~ msgstr "Annulla"

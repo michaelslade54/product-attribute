@@ -99,7 +99,6 @@ class PricelistSimulationLine(models.TransientModel):
         readonly=True,
     )
     price = fields.Monetary(
-        digits="Price",
+        string="Unit Price",
         readonly=True,
-        currency_field="currency_id",
     )

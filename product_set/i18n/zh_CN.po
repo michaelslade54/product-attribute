@@ -28,6 +28,21 @@ msgstr "有效"
 
 #. module: product_set
 #: model_terms:ir.ui.view,arch_db:product_set.view_product_set_form
+msgid "Add a line"
+msgstr ""
+
+#. module: product_set
+#: model_terms:ir.ui.view,arch_db:product_set.view_product_set_form
+msgid "Add a note"
+msgstr ""
+
+#. module: product_set
+#: model_terms:ir.ui.view,arch_db:product_set.view_product_set_form
+msgid "Add a section"
+msgstr ""
+
+#. module: product_set
+#: model_terms:ir.ui.view,arch_db:product_set.view_product_set_form
 #: model_terms:ir.ui.view,arch_db:product_set.view_product_set_search
 msgid "Archived"
 msgstr ""
@@ -55,6 +70,11 @@ msgstr "创建时间"
 #: model:ir.model.fields,field_description:product_set.field_product_set_line__display_name
 msgid "Display Name"
 msgstr "显示名称"
+
+#. module: product_set
+#: model:ir.model.fields,field_description:product_set.field_product_set_line__display_type
+msgid "Display Type"
+msgstr ""
 
 #. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set__id
@@ -87,11 +107,18 @@ msgstr "最后更新时间"
 
 #. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set__name
+#: model:ir.model.fields,field_description:product_set.field_product_set_line__name
 msgid "Name"
 msgstr "名称"
 
 #. module: product_set
+#: model:ir.model.fields.selection,name:product_set.selection__product_set_line__display_type__line_note
+msgid "Note"
+msgstr ""
+
+#. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set__partner_id
+#: model:ir.model.fields,field_description:product_set.field_product_set_wizard__partner_id
 #: model_terms:ir.ui.view,arch_db:product_set.view_product_set_search
 msgid "Partner"
 msgstr ""
@@ -105,6 +132,7 @@ msgstr "产品"
 #. module: product_set
 #: model:ir.actions.act_window,name:product_set.act_open_product_set_view
 #: model:ir.model,name:product_set.model_product_set
+#: model:ir.model.fields,field_description:product_set.field_product_set_wizard__product_set_id
 #: model_terms:ir.ui.view,arch_db:product_set.view_product_set_form
 #: model_terms:ir.ui.view,arch_db:product_set.view_product_set_line_search
 #: model_terms:ir.ui.view,arch_db:product_set.view_product_set_search
@@ -124,6 +152,11 @@ msgid "Product set line"
 msgstr "产品集合行"
 
 #. module: product_set
+#: model:ir.model.fields,field_description:product_set.field_product_set_wizard__product_set_line_ids
+msgid "Product set lines"
+msgstr "产品集合行"
+
+#. module: product_set
 #: model:ir.model.fields,help:product_set.field_product_set__name
 msgid "Product set name"
 msgstr "产品集合名称"
@@ -135,8 +168,14 @@ msgstr "产品"
 
 #. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set_line__quantity
+#: model:ir.model.fields,field_description:product_set.field_product_set_wizard__quantity
 msgid "Quantity"
 msgstr "数量"
+
+#. module: product_set
+#: model:ir.model.fields.selection,name:product_set.selection__product_set_line__display_type__line_section
+msgid "Section"
+msgstr ""
 
 #. module: product_set
 #: model:ir.model.fields,field_description:product_set.field_product_set_line__sequence
@@ -147,6 +186,18 @@ msgstr "序列"
 #: model:ir.model.fields,field_description:product_set.field_product_set_line__product_set_id
 msgid "Set"
 msgstr "集合"
+
+#. module: product_set
+#. odoo-python
+#: code:addons/product_set/tests/models.py:0
+#, python-format
+msgid "This set of products is restricted for this user."
+msgstr ""
+
+#. module: product_set
+#: model:ir.model,name:product_set.model_product_set_wizard
+msgid "Transient base model to define custom wizards"
+msgstr ""
 
 #. module: product_set
 #: model:ir.model.fields,help:product_set.field_product_set__partner_id
@@ -169,9 +220,6 @@ msgstr ""
 
 #~ msgid "Discount (%)"
 #~ msgstr "折扣(%)"
-
-#~ msgid "Product set lines"
-#~ msgstr "产品集合行"
 
 #~ msgid "Wizard model to add product set into a quotation"
 #~ msgstr "向导模型将产品集合添加到报价中"
