@@ -4,7 +4,6 @@ from odoo import fields, models
 
 
 class ProductStateHistoryWizard(models.TransientModel):
-
     _name = "product.state.history.wizard"
     _description = "Product State History Report"
 

@@ -6,7 +6,7 @@ from odoo.tests.common import TransactionCase
 class CommonProductStateHistory(TransactionCase):
     @classmethod
     def setUpClass(cls):
-        super(CommonProductStateHistory, cls).setUpClass()
+        super().setUpClass()
         cls.product_1 = cls.env.ref("product.product_delivery_01")
         cls.product_2 = cls.env.ref("product.product_delivery_02")
         cls.history_obj = cls.env["product.state.history"]
