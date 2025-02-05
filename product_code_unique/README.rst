@@ -39,19 +39,19 @@ to make it unique across the database.
 Usage
 =====
 
--  Unable to save a product when a new internal reference or
-   default_code value is the same with an existing record.
--  A pre_init_hook process is initiated when there exist records without
-   an internal reference(default_code). A default value is generated to
-   populate empty field as a temporary value.
+- Unable to save a product when a new internal reference or default_code
+  value is the same with an existing record.
+- A pre_init_hook process is initiated when there exist records without
+  an internal reference(default_code). A default value is generated to
+  populate empty field as a temporary value.
 
 Known issues / Roadmap
 ======================
 
--  Avoid duplicate warnings. Odoo has a warning for duplicate "Internal
-   Reference" of its own (it doesn't block from saving). Now both
-   warnings are displayed when trying to save a duplicate "Internal
-   Reference".
+- Avoid duplicate warnings. Odoo has a warning for duplicate "Internal
+  Reference" of its own (it doesn't block from saving). Now both
+  warnings are displayed when trying to save a duplicate "Internal
+  Reference".
 
 Bug Tracker
 ===========
@@ -74,10 +74,10 @@ Authors
 Contributors
 ------------
 
--  Antonio Yamuta <ayamuta@opensourceintegrators.com>
--  Raf Ven <raf.ven@dynapps.be>
--  Watthanun Khorchai <watthanun_t@hotmail.com>
--  Nedas Žilinskas <nedas.zilinskas@web-veistamo.fi>
+- Antonio Yamuta <ayamuta@opensourceintegrators.com>
+- Raf Ven <raf.ven@dynapps.be>
+- Watthanun Khorchai <watthanun_t@hotmail.com>
+- Nedas Žilinskas <nedas.zilinskas@web-veistamo.fi>
 
 Maintainers
 -----------
