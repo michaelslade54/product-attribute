@@ -39,12 +39,12 @@ product as required.
 Usage
 =====
 
--  Unable to save a product with an empty or blank internal reference.
--  When creating more than one product variant from the template, a
-   variant will be created with a default value for default_code field.
--  A pre_init_hook process is initiated when there exist records without
-   an internal reference(default_code). A default value is generated to
-   populate empty field as a temporary value.
+- Unable to save a product with an empty or blank internal reference.
+- When creating more than one product variant from the template, a
+  variant will be created with a default value for default_code field.
+- A pre_init_hook process is initiated when there exist records without
+  an internal reference(default_code). A default value is generated to
+  populate empty field as a temporary value.
 
 |Try me on Runbot|
 
@@ -72,13 +72,13 @@ Authors
 Contributors
 ------------
 
--  Antonio Yamuta <ayamuta@opensourceintegrators.com>
--  Sudhir Arya <sudhir@erpharbor.com>
--  Watthanun Khorchai <watthanun_t@hotmail.com>
--  Nedas Žilinskas <nedas.zilinskas@web-veistamo.fi>
--  `Binhex <https://binhex.cloud/>`__:
+- Antonio Yamuta <ayamuta@opensourceintegrators.com>
+- Sudhir Arya <sudhir@erpharbor.com>
+- Watthanun Khorchai <watthanun_t@hotmail.com>
+- Nedas Žilinskas <nedas.zilinskas@web-veistamo.fi>
+- `Binhex <https://binhex.cloud/>`__:
 
-   -  Mario Luis Mora <m.luis@binhex.cloud>
+  - Mario Luis Mora <m.luis@binhex.cloud>
 
 Maintainers
 -----------

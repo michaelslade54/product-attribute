@@ -56,7 +56,7 @@ Authors
 Contributors
 ------------
 
--  Denis Roussel <denis.roussel@acsone.eu>
+- Denis Roussel <denis.roussel@acsone.eu>
 
 Maintainers
 -----------
