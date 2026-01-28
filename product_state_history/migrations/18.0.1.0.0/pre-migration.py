@@ -10,4 +10,4 @@ xml_ids = ["product_state_history.product_template_form_view",
 
 @openupgrade.migrate()
 def migrate(env, version):
-    openupgrade.delete_records_safely_by_xmlid(env, xml_ids)
+    openupgrade.delete_records_safely_by_xml_id(env, xml_ids)
